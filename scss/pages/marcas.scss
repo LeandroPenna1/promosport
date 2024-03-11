@@ -1,0 +1,108 @@
+@import '../general/variables.scss';
+/* SECCION MARCAS */
+
+#marcas {
+    background-color: $color-secundario;
+    text-align: center;
+
+    h1 {
+        margin-top: 60px;
+        font-size: $size-title;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-decoration: underline;
+        text-decoration-color: $color-primario;
+        text-decoration-thickness: 5px;
+    }
+
+    .contenedor-banner {
+        margin: 0px 15px;
+        max-width: 1600px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        .titulo-banner {
+            color: $color-primario;
+        }
+    }
+
+    .banner p {
+        max-width: 350px;
+    }
+
+    img {
+        margin-top: 20px;
+        height: 400px;
+        width: 290px;
+        border-radius: 12px;
+        filter: grayscale(1);
+        transition: .5s;
+
+        &:hover {
+            box-shadow: 5px 5px 10px #565656, -5px -5px 10px #8a8a8a;
+            filter: grayscale(0);
+        }
+    }
+
+    /* RESPONSIVE 1 */
+    @media (max-width: 900px) {
+        width: 100%;
+        height: 85%;
+
+        h1 {
+            height: 10vh;
+            font-size: 20px;
+            text-decoration-thickness: 3px;
+        }
+
+        .contenedor-banner {
+            height: max-content;
+            display: flex;
+            flex-direction: row;
+            margin-top: -40px;
+            max-width: 200vw;
+
+            .banner {
+                width: 33%;
+
+                p {
+                    max-width: 300px;
+                    font-size: 11px;
+                }
+            }
+        }
+
+        img {
+            height: 250px;
+            width: 175px;
+        }
+    }
+    /* RESPONSIVE 2 */
+    @media (max-width: 575px) {
+        
+        .contenedor-banner {
+            height: max-content;
+            display: flex;
+            flex-direction: row;
+            margin-top: -40px;
+            max-width: 200vw;
+
+            .banner {
+                width: 33%;
+
+                p {
+                    max-width: 300px;
+                    font-size: 11px;
+                }
+            }
+        }
+
+        img {
+            height: 150px;
+            width:  75px;
+        }
+    }
+}

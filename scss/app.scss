@@ -1,0 +1,17 @@
+/* Tipografia */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,200&display=swap');
+/* General */
+@import 'general/variables.scss';
+@import 'general/reset.scss';
+
+/* Layout */
+@import 'layout/header.scss';
+@import 'layout/footer.scss';
+
+/* Pages */
+@import 'pages/index.scss';
+@import 'pages/marcas.scss';
+@import 'pages/nuevos-lanzamientos.scss';
+@import 'pages/sobre-nosotros.scss';
+@import 'pages/foro.scss';
+@import 'pages/contacto.scss';

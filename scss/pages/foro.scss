@@ -1,0 +1,55 @@
+
+@mixin animar-frase {
+    animation: mover-frase 2s ease infinite, parpadear 1s infinite alternate;
+}
+// Animación titileo
+@keyframes parpadear {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+// Animación movimiento
+@keyframes mover-frase {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-50px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+// Estilos 
+#foro {
+    text-align: center;
+    padding: 160px 0;
+    height: 100vh;
+
+    h1 {
+        color: $color-secundario;
+        font-size: $size-title;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-decoration: underline;
+        text-decoration-color: $color-primario;
+        text-decoration-thickness: 5px;
+    }
+
+    // Aplicar animación al título "Foro"
+    h1 {
+        @include animar-frase;
+    }
+
+    // Estilos para las frases
+    .mensaje-construccion,
+    .descripcion {
+        // Aplicar animación a las frases
+        @include animar-frase;
+    }
+}

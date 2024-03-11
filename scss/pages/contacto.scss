@@ -1,0 +1,56 @@
+@import '../general/variables.scss';
+/* CONTACTO */
+
+
+#contacto {
+    text-align: center;
+    padding: 60px 0;
+    height: 100vh;
+    h1 {
+        color: $color-secundario;
+        font-size: $size-title;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-decoration: underline;
+        text-decoration-color: $color-primario;
+        text-decoration-thickness: 5px;
+    }
+    .formulario {
+        height: 420px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .subtitulo {
+        color: $color-primario;
+        font-size: 20px;
+    }
+    form {
+        width: 500px;
+        margin-bottom: 5px;
+    }
+    input, textarea {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid $color-primario; // Utilizando la variable
+            border-radius: 5px;
+            background-color: $color-secundario;
+            color: $color-primario;
+            width: 100%;
+    
+            &[type="submit"] {
+                background-color: $color-secundario; // Utilizando la variable
+                color: $color-primario;
+                cursor: pointer;
+                transition: 0.8s;
+    
+                &:hover {
+                    background-color: $color-primario;
+                    color: $color-secundario;
+                }
+            }
+        }
+    }
+
+

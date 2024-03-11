@@ -1,0 +1,102 @@
+@import '../general/variables.scss';
+/* HEADER */
+
+header {
+    background-color: $color-secundario;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+    padding: 0 10px;
+    height: 60px;
+
+    .contenido-header {
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: row;
+    }
+
+    #links {
+        height: 50px;
+        list-style: none;
+        color: $color-primario;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        margin: 0 12px;
+        font-weight: 400;
+        transition: 0.5s;
+
+        &:hover {
+            color: $color-primario;
+        }
+    }
+
+    .contenido-header {
+        .logo {
+            color: $color-primario;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            margin-top: 10px;
+            .siglas {
+               font-size: $size-title;
+               margin-bottom: 0;
+            }
+        }
+    }
+
+    .dropdown {
+        display: none;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 20px;
+
+        #links {
+            display: none;
+        }
+
+        .dropdown {
+            display: flex;
+            align-items: center;
+        }
+
+        .btn {
+            background-color: $color-primario;
+            border-color: $color-primario;
+            width: 80px;
+            height: 50px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $color-terciario;
+                border-color: $color-terciario;
+                transition: 0.9s;
+            }
+        }
+
+        .dropdown .dropdown-menu li a {
+            color: $color-primario;
+
+            &:hover {
+                background-color: $color-secundario;
+                transition: 0.5s;
+            }
+        }
+    }
+}

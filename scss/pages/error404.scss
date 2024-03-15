@@ -1,0 +1,47 @@
+@import '../general/variables.scss';
+
+/* ERROR 404 */
+
+#error {
+    text-align: center;
+    padding: 60px 0;
+    height: 100vh;
+
+    .titulo {
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    h1 {
+        color: $color-secundario;
+        font-size: $size-title;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-decoration: underline;
+        text-decoration-color: $color-primario;
+        text-decoration-thickness: 5px;
+    }
+    .volver {
+        
+        background-color: $color-secundario;
+        color: $color-primario;
+        cursor: pointer;
+        transition: 0.8s;
+
+        &:hover {
+            background-color: $color-primario;
+        }
+        a {
+            text-decoration: none;
+            list-style: none;
+            color: $color-primario;   
+        &:hover {
+            
+            color: $color-secundario;
+        }         
+        }
+    }
+    
+ }

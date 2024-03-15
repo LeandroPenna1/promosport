@@ -687,4 +687,47 @@ header .dropdown {
   color: #AAAE7F;
 }
 
+/* Colores */
+/* Fonts */
+/* Margins */
+/* ERROR 404 */
+#error {
+  text-align: center;
+  padding: 60px 0;
+  height: 100vh;
+}
+#error .titulo {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#error h1 {
+  color: #AAAE7F;
+  font-size: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-decoration: underline;
+  text-decoration-color: #143109;
+  text-decoration-thickness: 5px;
+}
+#error .volver {
+  background-color: #AAAE7F;
+  color: #143109;
+  cursor: pointer;
+  transition: 0.8s;
+}
+#error .volver:hover {
+  background-color: #143109;
+}
+#error .volver a {
+  text-decoration: none;
+  list-style: none;
+  color: #143109;
+}
+#error .volver a:hover {
+  color: #AAAE7F;
+}
+
 /*# sourceMappingURL=main.css.map */

@@ -5,7 +5,13 @@
 #contacto {
     text-align: center;
     padding: 60px 0;
-    height: 100vh;
+
+    .titulo {
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
     h1 {
         color: $color-secundario;
         font-size: $size-title;
@@ -16,7 +22,13 @@
         text-decoration-color: $color-primario;
         text-decoration-thickness: 5px;
     }
+    .subtitulo {
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+    }
     .formulario {
+        padding-top: 20px;
         height: 420px;
         display: flex;
         align-items: center;
@@ -33,14 +45,14 @@
     input, textarea {
             margin-bottom: 15px;
             padding: 10px;
-            border: 1px solid $color-primario; // Utilizando la variable
+            border: 1px solid $color-primario;
             border-radius: 5px;
             background-color: $color-secundario;
             color: $color-primario;
             width: 100%;
     
             &[type="submit"] {
-                background-color: $color-secundario; // Utilizando la variable
+                background-color: $color-secundario;
                 color: $color-primario;
                 cursor: pointer;
                 transition: 0.8s;

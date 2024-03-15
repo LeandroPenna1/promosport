@@ -3,6 +3,14 @@
 
 #nuevos-lanzamientos {
     padding: 60px 0;
+    
+    .titulo {
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
     h1 {
         color: $color-secundario;
         font-size: $size-title;
@@ -43,27 +51,32 @@
     /* RESPONSIVE */
     @media (max-width: 768px) {
         h1 {
-            height: 10vh;
             font-size: 20px;
             text-decoration-thickness: 3px;
         }
 
-        .prendas-contenedor .prenda {
-            margin-top: -60px;
-            width: 33%;
+        .prendas-contenedor {
+            align-items: center;
+            .prenda {
+                margin-top: -30px;
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
 
-            p {
-                width: 80px;
-                justify-content: center;
-                font-size: 10px;
-                margin-left: -20px;
+                p {
+                    width: 100%;
+                    justify-content: center;
+                    font-size: 10px;
+                    margin-left: -20px;
+                }
+
+                img {
+                    height: 70px;
+                    width: 70px;
+                }
             }
 
-            img {
-                height: 70px;
-                width: 70px;
-            }
         }
-
     }
 }

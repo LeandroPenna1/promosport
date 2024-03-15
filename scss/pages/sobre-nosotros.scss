@@ -2,7 +2,7 @@
 /* SOBRE NOSOTROS */
 
 #sobre-nosotros {
-    
+    padding: 60px 0;
     background-color: $color-secundario;
     .grid-container {
         height: max-content;
@@ -11,9 +11,15 @@
         grid-gap: 10px;
     }
 
-    h1 {
+    .titulo {
         grid-column: span 2;
-        margin-top: 60px;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    h1 {
         font-size: $size-title;
         display: flex;
         flex-direction: row;
@@ -52,6 +58,7 @@
     @media (max-width: 768px) {
         display: flex;
         flex-direction: column;
+        
 
         .grid-container {
             height: max-content;

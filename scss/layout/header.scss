@@ -11,36 +11,12 @@ header {
     height: 60px;
 
     .contenido-header {
-        height: 60px;
+        height: 100%;
         display: flex;
         justify-content: center;
         align-content: center;
         flex-direction: row;
-    }
 
-    #links {
-        height: 50px;
-        list-style: none;
-        color: $color-primario;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    nav ul li a {
-        text-decoration: none;
-        color: #fff;
-        margin: 0 12px;
-        font-weight: 400;
-        transition: 0.5s;
-
-        &:hover {
-            color: $color-primario;
-        }
-    }
-
-    .contenido-header {
         .logo {
             color: $color-primario;
             display: flex;
@@ -49,12 +25,51 @@ header {
             flex-direction: column;
             text-align: center;
             margin-top: 10px;
+            margin-left: 25px;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+
             .siglas {
-               font-size: $size-title;
-               margin-bottom: 0;
+                font-size: $size-title;
+                margin-bottom: 0;
+            }
+        }
+    
+    nav ul li {
+        height: 60px;
+        a {
+            display: flex;
+            height: 60px;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: #fff;
+            margin: 0 12px;
+            transition: 1s;
+
+            &:hover {
+                background-color: $color-primario;
+                color: $color-secundario;
             }
         }
     }
+}
+    #links {
+        height: 60px;
+        list-style: none;
+        color: $color-primario;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+    }
+
+
+
 
     .dropdown {
         display: none;

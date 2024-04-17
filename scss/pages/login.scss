@@ -1,0 +1,53 @@
+@import '../general/variables.scss';
+
+/* LOGIN */
+
+
+#login {
+    text-align: center;
+    padding: 60px 0;
+
+    .titulo {
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    h1 {
+        color: $color-secundario;
+        font-size: $size-title;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-decoration: underline;
+        text-decoration-color: $color-primario;
+        text-decoration-thickness: 5px;
+    }
+    .subtitulo {
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+    }
+    .login-container {
+    input, textarea {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid $color-primario;
+            border-radius: 5px;
+            background-color: $color-secundario;
+            color: $color-primario;
+            width: 300px;
+        }
+        button {
+            background-color: $color-secundario;
+            color: $color-primario;
+            cursor: pointer;
+            transition: 0.8s;
+
+            &:hover {
+                background-color: $color-primario;
+                color: $color-secundario;
+            }
+        }
+    }
+}

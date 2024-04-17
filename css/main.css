@@ -730,4 +730,91 @@ header .dropdown {
   color: #AAAE7F;
 }
 
+/* Colores */
+/* Fonts */
+/* Margins */
+/* LOGIN */
+#login {
+  text-align: center;
+  padding: 60px 0;
+}
+#login .titulo {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#login h1 {
+  color: #AAAE7F;
+  font-size: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-decoration: underline;
+  text-decoration-color: #143109;
+  text-decoration-thickness: 5px;
+}
+#login .subtitulo {
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+}
+#login .login-container input, #login .login-container textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #143109;
+  border-radius: 5px;
+  background-color: #AAAE7F;
+  color: #143109;
+  width: 300px;
+}
+#login .login-container button {
+  background-color: #AAAE7F;
+  color: #143109;
+  cursor: pointer;
+  transition: 0.8s;
+}
+#login .login-container button:hover {
+  background-color: #143109;
+  color: #AAAE7F;
+}
+
+/* Colores */
+/* Fonts */
+/* Margins */
+/* LOGIN */
+#tienda-virtual {
+  text-align: center;
+  padding: 60px 0;
+}
+#tienda-virtual .titulo {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#tienda-virtual h1 {
+  color: #AAAE7F;
+  font-size: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-decoration: underline;
+  text-decoration-color: #143109;
+  text-decoration-thickness: 5px;
+}
+#tienda-virtual .subtitulo {
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+}
+#tienda-virtual .tv-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#tienda-virtual .tv-container img {
+  height: 200px;
+}
+
 /*# sourceMappingURL=main.css.map */

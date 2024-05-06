@@ -786,6 +786,15 @@ header .dropdown {
 #tienda-virtual {
   text-align: center;
   padding: 60px 0;
+  /* 
+  .tv-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+      img {
+      height: 200px;
+  }
+  } */
 }
 #tienda-virtual .titulo {
   height: 100px;
@@ -808,13 +817,23 @@ header .dropdown {
   flex-direction: column;
   height: max-content;
 }
-#tienda-virtual .tv-container {
+#tienda-virtual .containerTV {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 }
-#tienda-virtual .tv-container img {
-  height: 200px;
+#tienda-virtual .prenda {
+  background-color: #143109;
+  color: #AAAE7F;
+  border-radius: 0.2rem;
+  border: solid 1px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#tienda-virtual img {
+  height: 180px;
 }
 
 /*# sourceMappingURL=main.css.map */

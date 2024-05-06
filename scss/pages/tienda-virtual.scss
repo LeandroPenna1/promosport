@@ -27,15 +27,33 @@
         display: flex;
         flex-direction: column;
         height: max-content;
-    }
+    }/* 
     .tv-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
         img {
         height: 200px;
-
     }
+    } */
+    .containerTV {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .prenda {
+        background-color: $color-primario;
+        color: $color-secundario;
+        border-radius: 0.2rem;
+        border: solid 1px black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        flex-direction: column;
+    }
+    img {
+        height: 180px;
     }
 
     }

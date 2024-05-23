@@ -56,19 +56,15 @@
                 <h1><strong>Bienvenido a nuestro e-commerce</strong></h1>
             </div>
             <p class="subtitulo"><strong>Encontrarás los mejores productos</strong></p>
-            <!-- <div class="tv-container">
-                <img src="../recursos/ropaPS/buzo-adelante1.png" alt="buzo">
-                <img src="../recursos/ropaPS/short1.png" alt="short">
-                <img src="../recursos/ropaPS/gorra.png" alt="gorra">
-                <img src="../recursos/ropaPS/mochila.png" alt="mochila">
-                <img src="../recursos/ropaPS/musculosa.png" alt="musculosa">
-            </div>-->
-            <div class="containerTV" id="containerTV">
+            <div class="containerTV" id="containerTV"></div>
                 <div class="busquedas" id="busquedas">
-                    <button onclick="presupuesto()">Presupuesto</button>
-                    <button onclick="busqueda()">Busqueda</button>
+                    <input type="number" id="presupuestoInput" placeholder="Ingresa tu presupuesto">
+                    <button onclick="presupuesto()">Filtrar por presupuesto</button>
+                    <input type="text" id="busquedaInput" placeholder="Ingresa el nombre de la prenda">
+                    <button onclick="busqueda()">Buscar prenda</button>
                 </div>
-
+            <div class="carrito" id="carrito">
+                
             </div>
         </main>
     </section>

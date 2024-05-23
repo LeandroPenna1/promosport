@@ -786,15 +786,6 @@ header .dropdown {
 #tienda-virtual {
   text-align: center;
   padding: 60px 0;
-  /* 
-  .tv-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-      img {
-      height: 200px;
-  }
-  } */
 }
 #tienda-virtual .titulo {
   height: 100px;
@@ -819,8 +810,9 @@ header .dropdown {
 }
 #tienda-virtual .containerTV {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  gap: 10px;
 }
 #tienda-virtual .prenda {
   background-color: #143109;
@@ -831,9 +823,36 @@ header .dropdown {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
 }
 #tienda-virtual img {
   height: 180px;
+}
+#tienda-virtual .busquedas {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+}
+#tienda-virtual .item-carrito {
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#tienda-virtual button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+#tienda-virtual button:hover {
+  background-color: #0056b3;
 }
 
 /*# sourceMappingURL=main.css.map */

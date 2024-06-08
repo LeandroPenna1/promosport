@@ -55,15 +55,43 @@ function agregarAlCarrito(prenda) {
     carrito.push(prenda);
     actualizarLocalStorage();
     actualizarCarrito();
-  }
   
+    Toastify({
+      text: `Se agregó "${prenda.nombre}" al carrito.`,
+      duration: 3000,
+      gravity: "bottom",
+      position: "right",
+      style: {
+        background: "linear-gradient(to right, #00b09b, #96c93d)",
+      },
+    }).showToast();
+}
   function eliminarDelCarrito(index) {
-    if (index >= 0 && index < carrito.length) {
-        carrito.splice(index, 1);
-        actualizarLocalStorage();
-        actualizarCarrito();
-    }
-}  
+    Swal.fire({
+      title: "Estás seguro?",
+      text: "No podrás revertir esto!",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Confirmar"
+    }).then((result) => {
+      if (result.isConfirmed) {
+        if (index >= 0 && index < carrito.length) {
+          carrito.splice(index, 1);
+          actualizarLocalStorage();
+          actualizarCarrito();
+          Swal.fire({
+            title: "Eliminado!",
+            text: "Tu producto ha sido eliminado del carrito.",
+            icon: "success",
+            showConfirmButton: false,
+            timer: 1000
+          });
+        }
+      }
+    });
+  }
   function actualizarLocalStorage() {
     localStorage.setItem("carrito", JSON.stringify(carrito));
   }
@@ -84,7 +112,9 @@ function agregarAlCarrito(prenda) {
 
             const eliminarBtn = document.createElement("button");
             eliminarBtn.innerText = "Eliminar";
-            eliminarBtn.addEventListener("click", () => eliminarDelCarrito(i));
+            eliminarBtn.addEventListener("click", () => {
+                eliminarDelCarrito(i);
+            });
 
             item.appendChild(nombre);
             item.appendChild(precio);
